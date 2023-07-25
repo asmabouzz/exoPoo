@@ -6,10 +6,9 @@ public class Joueur {
     private int niveau;
     private int pointsExperiance;
 
-    public Joueur(String nom, int niveau, int pointsExperiance) {
+    public Joueur(String nom) {
         this.nom = nom;
-        this.niveau = niveau;
-        this.pointsExperiance = pointsExperiance;
+
     }
 
 
@@ -39,31 +38,22 @@ public class Joueur {
 
 
 
-    public int effectuerUneQuete(int pointsExperiance){
+    public void effectuerUneQuete(){
 
-     return   pointsExperiance+=10;
+       this.pointsExperiance+=10;
+       niveau();
 
     }
 
 
-    public int niveau(int pointsExperiance,int niveau){
+    private void niveau(){
 
-        if (pointsExperiance > 100){
-            niveau +=1;
+        if (this.pointsExperiance >= 100){
+            this.niveau ++;
+            this.pointsExperiance=0;
+            System.out.println("Le joueur "+nom+" passe au niveau : " +niveau);
         }
-    return niveau;
 
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "Joueur{" +
-                "nom='" + nom + '\'' +
-                ", niveau=" + niveau +
-                ", pointsExperiance=" + pointsExperiance +
-                '}';
     }
 
 
