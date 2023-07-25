@@ -11,9 +11,7 @@ public class Chaise {
     public Chaise(){
     };
 
-    //constructeur avec nbrPied
-
-
+    //constructeur avec prix
     public Chaise(double prix) {
         this.prix= prix;
     }
