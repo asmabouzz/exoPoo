@@ -8,10 +8,10 @@ public class Film {
 
     private String titre;
     private String realisateur;
-    private String anneSortie;
+    private LocalDate anneSortie;
     private String genre;
 
-    public Film(String titre, String realisateur, String anneSortie, String genre) {
+    public Film(String titre, String realisateur, LocalDate anneSortie, String genre) {
         this.titre = titre;
         this.realisateur = realisateur;
         this.anneSortie = anneSortie;
@@ -34,11 +34,11 @@ public class Film {
         this.realisateur = realisateur;
     }
 
-    public String getAnneSortie() {
+    public LocalDate getAnneSortie() {
         return anneSortie;
     }
 
-    public void setAnneSortie(String anneSortie) {
+    public void setAnneSortie(LocalDate anneSortie) {
         this.anneSortie = anneSortie;
     }
 
