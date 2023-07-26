@@ -2,9 +2,9 @@ package org.example.ExoPlante;
 
 public abstract class Plante {
 
-    protected String nom;
-    protected double hauteur;
-    protected String couleurFeuille;
+    private String nom;
+    private double hauteur;
+    private String couleurFeuille;
 
 
     public Plante(String nom, double hauteur, String couleurFeuille) {
