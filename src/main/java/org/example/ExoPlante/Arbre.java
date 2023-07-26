@@ -2,9 +2,9 @@ package org.example.ExoPlante;
 
 public class Arbre extends Plante {
 
-    private String circonférenceTronc;
+    private double circonférenceTronc;
 
-    public Arbre(String nom, double hauteur, String couleurFeuille,String circonférenceTronc) {
+    public Arbre(String nom, double hauteur, String couleurFeuille,double circonférenceTronc) {
         super(nom, hauteur, couleurFeuille);
         this.circonférenceTronc = circonférenceTronc;
 
