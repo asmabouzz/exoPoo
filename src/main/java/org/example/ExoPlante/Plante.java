@@ -1,6 +1,6 @@
 package org.example.ExoPlante;
 
-public abstract class Plante {
+public class Plante {
 
     private String nom;
     private double hauteur;
@@ -39,5 +39,7 @@ public abstract class Plante {
 
 
 
-    public abstract String affiche();
+    public String affiche(){
+       return null;
+    }
 }

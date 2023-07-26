@@ -55,4 +55,13 @@ public class Animal {
 
         return this.nom.length();
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nom='" + nom + '\'' +
+                ", age=" + age +
+                ", couleur='" + couleur + '\'' +
+                '}';
+    }
 }
