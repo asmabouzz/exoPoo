@@ -1,19 +1,24 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import org.example.statique.Maison;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Entrée with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Maj+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Maison maison = new Maison("orange",4,12.5,20);
+        System.out.println(maison.getCouleur());
+        maison.setCouleur("bleu");
+        System.out.println(maison.getCouleur());
+        maison.setCouleur("rouge");
+        System.out.println(maison.getCouleur());
 
-            // Press Maj+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
+       Maison maisonJolie=new Maison("jaune",1,2,3);
+        System.out.println("Nombre de maison instancier "+Maison.getNombreMaisons());  //private on passe par le getteur
+        System.out.println(Maison.nomLatin); //nomLatin est public pas besoin de getteur
+
+        //exemple de methode static
+        Math.round(120.3);
+        String .format("%s","toto");
     }
 }
