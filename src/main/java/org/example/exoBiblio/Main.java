@@ -11,11 +11,15 @@ public class Main {
         Livre livre4= new Livre("ocean","ocean",90,false);
         Livre livre5= new Livre("dorian","dorian",100,true);
 
+
+
         biblioteque.ajoutlivre(livre1);
         biblioteque.ajoutlivre(livre2);
         biblioteque.ajoutlivre(livre3);
         biblioteque.ajoutlivre(livre4);
         biblioteque.ajoutlivre(livre5);
+
+        biblioteque.afficheCollection();
 
         biblioteque.remove(livre3);
         System.out.println("############################");
