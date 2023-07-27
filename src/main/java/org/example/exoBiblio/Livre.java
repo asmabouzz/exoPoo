@@ -46,12 +46,12 @@ public class Livre {
         this.estEmprunte = estEmprunte;
     }
 
-    public String afficher(Livre livre) {
+    public String afficher() {
         return "Livre{" +
-                "titre='" + livre.titre + '\'' +
-                ", auteur='" + livre.auteur + '\'' +
-                ", nbrPages=" + livre.nbrPages +
-                ", estEmprunté=" + livre.estEmprunte +
+                "titre='" + this.titre + '\'' +
+                ", auteur='" + this.auteur + '\'' +
+                ", nbrPages=" + this.nbrPages +
+                ", estEmprunté=" + this.estEmprunte +
                 '}';
     }
 

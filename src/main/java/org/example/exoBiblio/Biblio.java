@@ -30,7 +30,7 @@ public class Biblio {
         //afficher les livres de la collection
     public void afficheCollection() {
         for (Livre livre : livres) {
-            livre.afficher( livre) ;
+            livre.afficher() ;
         }
     }
 
