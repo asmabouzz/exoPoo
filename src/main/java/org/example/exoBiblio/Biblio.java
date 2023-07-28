@@ -44,4 +44,13 @@ public class Biblio {
         livreEmprunter.setEstEmprunte(false);
     }
 
+
+    public void deleteByTitre(String titre){
+        for (Livre livre : livres) {
+            if(livre.getTitre().equals(titre)){
+                remove(livre);
+            }
+        }
+    }
+
 }

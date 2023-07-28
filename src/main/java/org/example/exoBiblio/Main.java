@@ -10,6 +10,7 @@ public class Main {
         Livre livre3= new Livre("joud","joud",200,false);
         Livre livre4= new Livre("ocean","ocean",90,false);
         Livre livre5= new Livre("dorian","dorian",100,true);
+        biblioteque.ajoutlivre(new Livre("titre5","auteur5",123,true));
 
 
 
@@ -27,6 +28,10 @@ public class Main {
 
        biblioteque.modifierEtat(livre2);
         System.out.println("############################");
+       biblioteque.afficheCollection();
+
+       biblioteque.deleteByTitre("titre5");
+
        biblioteque.afficheCollection();
     }
 }
