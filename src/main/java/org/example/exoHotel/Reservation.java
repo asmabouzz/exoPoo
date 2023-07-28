@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Reservation {
 
     private int numReservation;
-    private enum StatusReservationEnum ;
+    private StatusReservationEnum StatusReservationEnum ;
     private ArrayList<Chambre> chambres;
 
     private Client client;
@@ -15,9 +15,9 @@ public class Reservation {
 
     //constructeur
 
-
-    public Reservation(int numReservation, ArrayList<Chambre> chambres, Client client) {
+    public Reservation(int numReservation, org.example.exoHotel.StatusReservationEnum statusReservationEnum, ArrayList<Chambre> chambres, Client client) {
         this.numReservation = numReservation;
+        StatusReservationEnum = statusReservationEnum;
         this.chambres = chambres;
         this.client = client;
     }
@@ -25,13 +25,20 @@ public class Reservation {
 
     //getteur setteur
 
-
     public int getNumReservation() {
         return numReservation;
     }
 
     public void setNumReservation(int numReservation) {
         this.numReservation = numReservation;
+    }
+
+    public org.example.exoHotel.StatusReservationEnum getStatusReservationEnum() {
+        return StatusReservationEnum;
+    }
+
+    public void setStatusReservationEnum(org.example.exoHotel.StatusReservationEnum statusReservationEnum) {
+        StatusReservationEnum = statusReservationEnum;
     }
 
     public ArrayList<Chambre> getChambres() {
@@ -58,6 +65,7 @@ public class Reservation {
     public String toString() {
         return "Reservation{" +
                 "numReservation=" + numReservation +
+                ", StatusReservationEnum=" + StatusReservationEnum +
                 ", chambres=" + chambres +
                 ", client=" + client +
                 '}';
